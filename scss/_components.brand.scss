@@ -1,0 +1,30 @@
+/*
+    Components: Brand
+    ---
+    Brand image/logo
+*/
+
+/**
+ *  1. Needs to be the width of the logo you are using.
+ *  2. Logo is set as background-image.
+ *     Text-indent is set to prevent text from showing on top of the background-image.
+ */
+
+.c-logo {
+    font-family: $gamma-font-family;
+    font-weight: $beta-font-weight;
+    @include text-dimensions($ms1,1);
+}
+
+    .c-logo__link {
+        //display: block;
+        &,
+        &:visited {
+            color: palette(color-neutral,xx-dark);
+        }
+
+        &:hover,
+        &:focus {
+            color: palette(color-neutral,dark);
+        }
+    }

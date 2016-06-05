@@ -1,0 +1,11 @@
+/*
+    Scope: Content
+    ---
+    Everything between the s-content class
+*/
+
+.s-content {
+    * + h2 {
+        @include padding-top(1);
+    }
+}

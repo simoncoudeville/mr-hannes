@@ -1,0 +1,25 @@
+/*
+    Components: Header
+    ---
+    The header of the site
+*/
+
+.c-header {
+    .c-home & {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+}
+
+    .c-header__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .c-header__tag {
+        color: palette(color-neutral);
+        @include ms-1;
+    }

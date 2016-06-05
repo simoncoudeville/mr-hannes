@@ -1,0 +1,31 @@
+/*
+    Components: Links
+    ---
+    Special link classes
+*/
+
+.c-link-neutral-xx-dark-border {
+    &,
+    &:visited {
+        color: palette(color-neutral,xx-dark);
+        border-bottom: 1px solid palette(color-neutral,xx-dark);
+    }
+
+    &:hover,
+    &:focus {
+        color: palette(color-neutral,dark);
+        border-bottom-color: palette(color-neutral);
+    }
+}
+
+.c-link-neutral-base {
+    &,
+    &:visited {
+        color: palette(color-neutral);
+    }
+
+    &:hover,
+    &:focus {
+        color: palette(color-neutral,x-dark);
+    }
+}

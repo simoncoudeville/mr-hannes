@@ -1,0 +1,17 @@
+/*
+    Utility: Modular Scale (ms)
+    ---
+    Modular scale utility classes
+*/
+
+.u-ms-1 {
+    @include ms-1;
+}
+
+.u-ms4 {
+    @include ms4;
+}
+
+.u-ms5 {
+    @include ms5;
+}

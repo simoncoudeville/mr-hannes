@@ -1,0 +1,160 @@
+/*
+    Components: Cases
+    ---
+    Component for the different cases on portfolio
+*/
+
+.c-case {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 0;
+    //background-color: palette(color-neutral,xx-dark);
+}
+
+    .c-case__title {
+        text-align: center;
+        @include ms4;
+
+        @include mq(bp3) {
+            @include ms6;
+        }
+    }
+
+    .c-case__img {
+        position: relative;
+        display: block;
+        border-radius: 3px 3px 0 0;
+        box-shadow: 0 5px 25px rgba(black,.25);
+
+        @include mq(bp3) {
+            box-shadow: 0 10px 50px rgba(black,.25);
+        }
+    }
+
+    // kbc case
+
+    .c-case--kbc {
+        background-color: #09bcff;
+    }
+
+    .c-case__title--kbc {
+        color: palette(color-neutral,xx-light);
+    }
+
+    .c-case__images--kbc {
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-end;
+    }
+
+    .c-case__img--kbc-desktop {
+        max-width: 60vw;
+        left: 10px;
+
+        @include mq(bp3) {
+            left: 50px;
+        }
+
+        @include mq(bp5) {
+            left: 100px;
+        }
+    }
+
+    .c-case__img--kbc-mobile {
+        max-width: 20vw;
+        position: relative;
+        left: -10px;
+
+        @include mq(bp3) {
+            left: -50px;
+        }
+
+        @include mq(bp5) {
+            left: -100px;
+        }
+    }
+
+    // sweepbright case
+
+    .c-case--sweepbright {
+        background-color: #1faae6;
+    }
+
+    .c-case__title--sweepbright {
+        color: palette(color-neutral,xx-light);
+    }
+
+    .c-case__images--sweepbright {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+
+    .c-case__img--sweepbright {
+        max-width: 20vw;
+        height: auto;
+        @include margin-lr(1,1);
+    }
+
+    // ghent case
+
+    .c-case--ghent {
+        background-color: #f39200;
+    }
+
+    .c-case__title--ghent {
+        color: palette(color-neutral,xx-light);
+    }
+
+    .c-case__images--ghent {
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-end;
+    }
+
+    .c-case__img--ghent-desktop {
+        max-width: 60vw;
+        z-index: 1;
+        left: -10px;
+
+        @include mq(bp3) {
+            left: -50px;
+        }
+
+        @include mq(bp5) {
+            left: -100px;
+        }
+    }
+
+    .c-case__img--ghent-mobile {
+        max-width: 20vw;
+        position: relative;
+        z-index: 2;
+        left: 10px;
+
+        @include mq(bp3) {
+            left: 50px;
+        }
+
+        @include mq(bp5) {
+            left: 100px;
+        }
+    }
+
+    // Europabank case
+
+    .c-case--europabank {
+        background-color: #ffea00;
+    }
+
+    .c-case__images--europabank {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+
+    .c-case__img--europabank {
+        max-width: 50vw;
+        height: auto;
+        @include margin-lr(1,1);
+    }
